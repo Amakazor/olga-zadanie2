@@ -1,0 +1,10 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/olga-zadanie2/.vs/olga-zadanie2/v16
+/olga-zadanie2/Debug
+/olga-zadanie2/olga-zadanie2/Debug
+/olga-zadanie2/olga-zadanie2/x64/Debug
+/olga-zadanie2/x64/Debug
