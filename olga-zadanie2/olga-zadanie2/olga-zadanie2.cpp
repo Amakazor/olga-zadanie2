@@ -49,8 +49,99 @@ int main()
 	//5. Wyświetl wynik
 	//NOTATKA: liczby możesz też pobrać przed wyświetleniem menu. Zrób to tak, jak według Ciebie będzie lepszy User Experience ;)
 	//NOTATKA 2: Tak, to jest rehash pierwszego programu jaki napisaliśmy, tylko że na sterydach XD
+
+
+
+
+	
+
+	int main()
 	{
 
+		int liczba_jeden = 0;
+		int liczba_dwa = 0;
+		int u_input = 0;
+		int suma = 0;
+
+
+		std::cout << "Podaj pierwsza liczbe" << "\n\n";
+
+		std::cin >> liczba_jeden;
+
+		std::cout << "\n";
+
+		std::cout << "#1. Dodawanie                   #" << "\n\n";
+		std::cout << "#2. Odejmowanie                 #" << "\n\n";
+		std::cout << "#3. Dzielenie                   #" << "\n\n";
+		std::cout << "#4. Mnozenie                    #" << "\n\n";
+		std::cout << "Podaj numer opcji" << "\n\n";
+
+		std::cin >> u_input;
+
+		std::cout << "\n";
+
+		std::cout << "Podaj druga liczbe" << "\n\n";
+
+		std::cin >> liczba_dwa;
+
+		std::cout << "\n";
+
+		if (u_input == 1)
+		{
+			suma = liczba_jeden + liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+		}
+
+		else if (u_input == 2)
+		{
+			suma = liczba_jeden - liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+		}
+
+		else if (u_input == 3)
+		{
+			if (liczba_dwa != 0)
+			{
+				suma = liczba_jeden / liczba_dwa;
+				std::cout << "Twoj wynik to: " << suma;
+			}
+
+			else if (liczba_dwa == 0)
+			{
+				std::cout << "\n";
+				std::cout << "Nie mozna dzielic przez 0, wybierz inna liczbe" << "\n";
+				std::cin >> liczba_dwa;
+				std::cout << "\n";
+
+				if (liczba_dwa != 0)
+				{
+					suma = liczba_jeden / liczba_dwa;
+					std::cout << "Twoj wynik to: " << suma;
+				}
+
+				else
+				{
+					std::cout << "Jestes glupi" << "\n";
+				}
+			}
+		}
+
+		else if (u_input == 4)
+		{
+			suma = liczba_jeden * liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+		}
+
+		else
+		{
+			std::cout << "Niepoprawna opcja" << "\n";
+		}
+
+
+		std::cout << "\n";
+
+		std::cout << "Czy juz moge zarabiac 6tys netto?" << "\n";
+
+		std::cout << "btw, dziekuje, Arek!"
+
 	}
-	/*KONIEC ZADANIE 2*/
-}
