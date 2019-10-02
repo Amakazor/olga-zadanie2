@@ -49,8 +49,83 @@ int main()
 	//5. Wyświetl wynik
 	//NOTATKA: liczby możesz też pobrać przed wyświetleniem menu. Zrób to tak, jak według Ciebie będzie lepszy User Experience ;)
 	//NOTATKA 2: Tak, to jest rehash pierwszego programu jaki napisaliśmy, tylko że na sterydach XD
+
+
+
+
+	
+
+	int main()
 	{
 
+		int liczba_jeden = 0;
+		int liczba_dwa = 0;
+		int u_input = 0;
+		int suma = 0;
+
+
+		std::cout << "Podaj pierwsza liczbe" << "\n\n";
+
+		std::cin >> liczba_jeden;
+
+		std::cout << "\n";
+
+		std::cout << "#1. Dodawanie                   #" << "\n\n";
+		std::cout << "#2. Odejmowanie                 #" << "\n\n";
+		std::cout << "#3. Mnozenie                    #" << "\n\n";
+		std::cout << "#4. Dzielenie                   #" << "\n\n";
+		std::cout << "Podaj numer opcji" << "\n\n";
+
+		std::cin >> u_input;
+
+		std::cout << "\n";
+
+		std::cout << "Podaj druga liczbe" << "\n\n";
+
+		std::cin >> liczba_dwa;
+
+		std::cout << "\n";
+
+		if (u_input == 1)
+		{
+			suma = liczba_jeden + liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+
+		}
+
+		else if (u_input == 2)
+		{
+			suma = liczba_jeden - liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+		}
+
+		else if (u_input == 3)
+		{
+			suma = liczba_jeden * liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+		}
+
+		else (u_input == 4)
+		{
+			if (liczba_dwa != 0)
+			{
+				suma = liczba_jeden / liczba_dwa;
+				std::cout << "Twoj wynik to: " << suma;
+			}
+
+			else (liczba_dwa == 0);
+			{
+				std::cout << "\n";
+				std::cout << "Nie mozna dzielic przez 0, wybierz inną liczbe" << "\n";
+				std::cin >> liczba_dwa;
+				std::cout << "\n";
+				suma = liczba_jeden / liczba_dwa;
+				std::cout << "Twoj wynik to: " << suma;
+			}
+		}
+
+		std::cout << "\n";
+
+		std::cout << "Dziekuje";
+
 	}
-	/*KONIEC ZADANIE 2*/
-}
