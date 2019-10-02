@@ -72,8 +72,8 @@ int main()
 
 		std::cout << "#1. Dodawanie                   #" << "\n\n";
 		std::cout << "#2. Odejmowanie                 #" << "\n\n";
-		std::cout << "#3. Mnozenie                    #" << "\n\n";
-		std::cout << "#4. Dzielenie                   #" << "\n\n";
+		std::cout << "#3. Dzielenie                   #" << "\n\n";
+		std::cout << "#4. Mnozenie                    #" << "\n\n";
 		std::cout << "Podaj numer opcji" << "\n\n";
 
 		std::cin >> u_input;
@@ -90,7 +90,6 @@ int main()
 		{
 			suma = liczba_jeden + liczba_dwa;
 			std::cout << "Twoj wynik wynosi: " << suma;
-
 		}
 
 		else if (u_input == 2)
@@ -101,31 +100,48 @@ int main()
 
 		else if (u_input == 3)
 		{
-			suma = liczba_jeden * liczba_dwa;
-			std::cout << "Twoj wynik wynosi: " << suma;
-		}
-
-		else (u_input == 4)
-		{
 			if (liczba_dwa != 0)
 			{
 				suma = liczba_jeden / liczba_dwa;
 				std::cout << "Twoj wynik to: " << suma;
 			}
 
-			else (liczba_dwa == 0);
+			else if (liczba_dwa == 0)
 			{
 				std::cout << "\n";
-				std::cout << "Nie mozna dzielic przez 0, wybierz inną liczbe" << "\n";
+				std::cout << "Nie mozna dzielic przez 0, wybierz inna liczbe" << "\n";
 				std::cin >> liczba_dwa;
 				std::cout << "\n";
-				suma = liczba_jeden / liczba_dwa;
-				std::cout << "Twoj wynik to: " << suma;
+
+				if (liczba_dwa != 0)
+				{
+					suma = liczba_jeden / liczba_dwa;
+					std::cout << "Twoj wynik to: " << suma;
+				}
+
+				else
+				{
+					std::cout << "Jestes glupi" << "\n";
+				}
 			}
 		}
 
+		else if (u_input == 4)
+		{
+			suma = liczba_jeden * liczba_dwa;
+			std::cout << "Twoj wynik wynosi: " << suma;
+		}
+
+		else
+		{
+			std::cout << "Niepoprawna opcja" << "\n";
+		}
+
+
 		std::cout << "\n";
 
-		std::cout << "Dziekuje";
+		std::cout << "Czy juz moge zarabiac 6tys netto?" << "\n";
+
+		std::cout << "btw, dziekuje, Arek!"
 
 	}
